@@ -23,7 +23,7 @@ const EducationCard = ({ degree, collegeName, duration, desc }) => {
 const Education = () => {
   return (
     <section className="max-w-full lg:ml-20 lg:mr-20 mx-10 sm:mx-0 mt-24">
-      <h2 className="text-[50px] text-black mb-20 text-center">Aducation</h2>
+      <h2 className="text-[50px] text-black mb-20 text-center">Education</h2>
       <div className="flex flex-wrap flex-row lg:gap-4 gap-2 lg:justify-start md:justify-center">
         <EducationCard
           degree={"Bachelor of Technology"}
