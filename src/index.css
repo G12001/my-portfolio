@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4d4d4d;
+}
+
+.header-profile-img {
+    background-image: url("./assets/user.jpg");
+
+}
+
+.header-bg-img {
+    background-image: url("./assets/cover_bg_3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-color {
+    background: rgba(255, 144, 0, 0.9);
+    /* background: #ff9000; */
+}
+
+.title {
+    transform: rotate(-5deg);
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 144, 0, 0.9);
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+}
+
+.outline {
+    background: rgba(255, 144, 0, 0.9);
+    color: #fff;
+    border: 1px solid rgba(255, 144, 0, 0.9);
+    transition: all .3s ease;
+}
+
+.outline:hover {
+    transform: scale(1.125);
+    transition: all .3s ease;
+}
+
+.fill {
+    background: #fff;
+    padding: 16px 38px;
+    color: rgb(255, 144, 0);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.fill:hover {
+    transform: scale(1.125);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+    transition: all .3s ease;
+}
+
+.contact-img {
+    background-image: url("./assets/cover_bg_1.jpg");
+}
