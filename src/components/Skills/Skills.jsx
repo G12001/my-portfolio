@@ -11,7 +11,7 @@ const Skill = ({ skill, percentage }) => {
       value={percentage}
       strokeWidth={5}
       styles={buildStyles({ pathColor: "#ff9000" })}
-      className="h-[200px] w-[200px]"
+      className="h-[150px] w-[150px]"
     >
       <div
         className="flex flex-col justify-center items-center"
@@ -29,7 +29,7 @@ const Skills = () => {
     <section className="max-w-full lg:ml-20 lg:mr-20 mt-24 flex justify-center items-center flex-col">
       <h2 className="text-[50px] text-black mb-20 text-center">Skills</h2>
 
-      <div className="flex flex-wrap gap-12 lg:justify-between justify-center">
+      <div className="flex flex-wrap gap-14 justify-center">
         <Skill skill={"C++"} percentage={95} />
         <Skill skill={"HTML"} percentage={95} />
         <Skill skill={"CSS"} percentage={85} />
