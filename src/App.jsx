@@ -11,7 +11,7 @@ import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-900 w-full">
       <Nav />
       <Header />
       <About />
