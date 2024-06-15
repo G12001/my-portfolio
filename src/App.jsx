@@ -1,3 +1,4 @@
+import Switcher from "./DarkMode/Swicher";
 import About from "./components/About/About2";
 import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience2";
@@ -11,7 +12,7 @@ import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
-    <div className="dark:bg-gray-900 w-full">
+    <div className="dark:bg-gray-900 w-full relative">
       <Nav />
       <Header />
       <About />
