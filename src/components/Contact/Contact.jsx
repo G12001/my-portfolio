@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import contactBg1 from "../../assets/cover_bg_1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +11,10 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -25,18 +31,37 @@ const Contact = () => {
 
     console.log(formData, "Not yet implemented");
   };
+
   return (
-    <section className="max-w-full lg:ml-20 lg:mr-20 mx-10 sm:mx-0 mt-24">
-      <h2 className="text-[50px] text-black mb-20 text-center">Contact Me</h2>
-      <div className="flex flex-row">
-        <div className="flex-1 lg:w-1/2 h-[630px] overflow-hidden flex justify-center items-center hidden lg:block">
+    <section
+      className="max-w-full lg:ml-20 lg:mr-20 mt-24"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      <h2
+        className="text-[50px] text-black mb-20 text-center dark:text-white"
+        data-aos="fade-down"
+        data-aos-duration="1200"
+      >
+        Contact Me
+      </h2>
+      <div className="flex items-center gap-x-4">
+        <div
+          className="flex-1 lg:w-1/2 h-[630px] overflow-hidden flex justify-center items-center hidden lg:block"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
           <img src={contactBg1} className="w-full" />
         </div>
-        <div className="flex-1 flex flex-col gap-y-8 lg:mx-0 md:mx-8">
+        <div
+          className="flex-1 flex flex-col gap-y-8 lg:mx-0 md:mx-8"
+          data-aos="fade-left"
+          data-aos-duration="1200"
+        >
           <input
             placeholder="eg. Joe"
             type="text"
-            className="text-[24px] border border-solid pl-5 py-2"
+            className=" focus:outline-none text-[24px] border border-solid pl-5 py-2 rounded-md"
             name="fname"
             value={formData.fname}
             onChange={handleChange}
@@ -44,7 +69,7 @@ const Contact = () => {
           <input
             placeholder="eg. root"
             type="text"
-            className="text-[24px] border border-solid pl-5 py-2"
+            className=" focus:outline-none text-[24px] border border-solid pl-5 py-2 rounded-md"
             name="lname"
             value={formData.lname}
             onChange={handleChange}
@@ -52,28 +77,28 @@ const Contact = () => {
           <input
             placeholder="example@gmail.com"
             type="email"
-            className="text-[24px] border border-solid pl-5 py-2"
+            className=" focus:outline-none text-[24px] border border-solid pl-5 py-2 rounded-md"
             name="email"
             value={formData.email}
             onChange={handleChange}
           />
           <input
-            placeholder="Subject - Want's to say hii.."
+            placeholder="Subject - Want's to say hi.."
             type="text"
-            className="text-[24px] border border-solid pl-5 py-2"
+            className=" focus:outline-none text-[24px] border border-solid pl-5 py-2 rounded-md"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
           />
           <textarea
-            placeholder="Write message for me."
-            className="text-[24px] border border-solid pl-5 py-2"
+            placeholder="Write a message for me."
+            className=" focus:outline-none text-[24px] border border-solid pl-5 py-2 rounded-md"
             name="message"
             value={formData.message}
             onChange={handleChange}
           />
           <button
-            className="border-none px-[24px] py-[12px] text-[16px] mt-4 cursor-pointer outline"
+            className="border-none px-[24px] py-[12px] text-[16px] mt-4 cursor-pointer bg-[#ff9000] text-white hover:bg-[#e08c00] rounded-md transition-colors duration-300"
             onClick={sendMessage}
           >
             Send Message

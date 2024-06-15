@@ -1,6 +1,4 @@
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import { FaArrowUp } from "react-icons/fa6";
 
 const ScrollToTop = () => {
   const handleScrollToTop = () => {
@@ -13,9 +11,9 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={handleScrollToTop}
-      className=" rounded-full bg-[#ff9000] h-16 w-16 animate-bounce fixed bottom-4 right-4"
+      className=" rounded-full bg-[#4d4d4d] h-12 w-12 fixed bottom-4 right-4 flex justify-center items-center"
     >
-      <FontAwesomeIcon icon={faArrowUp} className="text-[28px]" />
+      <FaArrowUp className="text-white h-6 w-6" />
     </button>
   );
 };

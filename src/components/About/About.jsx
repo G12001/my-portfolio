@@ -1,11 +1,10 @@
 import {
-  faLinkedin,
-  faSquareGithub,
-  faSquareInstagram,
-  faSquareXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+  FaLinkedin,
+  FaGithubSquare,
+  FaInstagramSquare,
+  FaTwitterSquare,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -63,35 +62,23 @@ const About = () => {
             </p>
           </div>
           <div className="flex gap-x-4">
-            <a
-              href="https://www.linkedin.com/in/shubham-pimple/"
+            <Link
+              to="https://www.linkedin.com/in/shubham-pimple/"
               target="_blank"
             >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                style={{ color: "#ffffff", fontSize: "50px" }}
-              />
-            </a>
+              <FaLinkedin className="h-12 w-12 text-white" />
+            </Link>
             <a href="https://github.com/G12001" target="_blank">
-              <FontAwesomeIcon
-                icon={faSquareGithub}
-                style={{ color: "#ffffff", fontSize: "50px" }}
-              />
+              <FaGithubSquare className="h-12 w-12 text-white" />
             </a>
             <a
               href="https://www.instagram.com/stylishgeeklegend/"
               target="_blank"
             >
-              <FontAwesomeIcon
-                icon={faSquareInstagram}
-                style={{ color: "#ffffff", fontSize: "50px" }}
-              />
+              <FaInstagramSquare className="h-12 w-12 text-white" />
             </a>
             <a href="https://twitter.com/skul_striker" target="_blank">
-              <FontAwesomeIcon
-                icon={faSquareXTwitter}
-                style={{ color: "#ffffff", fontSize: "50px" }}
-              />
+              <FaTwitterSquare className="h-12 w-12 text-white" />
             </a>
           </div>
         </div>

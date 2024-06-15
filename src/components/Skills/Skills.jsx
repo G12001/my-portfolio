@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   CircularProgressbarWithChildren,
   buildStyles,
@@ -7,27 +9,43 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Skill = ({ skill, percentage }) => {
   return (
-    <CircularProgressbarWithChildren
-      value={percentage}
-      strokeWidth={5}
-      styles={buildStyles({ pathColor: "#ff9000" })}
-      className="h-[150px] w-[150px]"
-    >
-      <div
-        className="flex flex-col justify-center items-center"
-        style={{ marginTop: -5 }}
+    <div data-aos="fade-up" data-aos-duration="1200">
+      <CircularProgressbarWithChildren
+        value={percentage}
+        strokeWidth={5}
+        styles={buildStyles({ pathColor: "#ff9000" })}
+        className="h-[150px] w-[150px]"
       >
-        <span className="text-black font-bold text-[22px] -mb-2">{skill}</span>
-        <span className="text-gray-600 text-[18px]">{percentage}%</span>
-      </div>
-    </CircularProgressbarWithChildren>
+        <div
+          className="flex flex-col justify-center items-center"
+          style={{ marginTop: -5 }}
+        >
+          <span className="text-black dark:text-white font-bold text-[22px] -mb-2">
+            {skill}
+          </span>
+          <span className="text-gray-600 dark:text-gray-300 text-[18px]">
+            {percentage}%
+          </span>
+        </div>
+      </CircularProgressbarWithChildren>
+    </div>
   );
 };
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="max-w-full lg:ml-20 lg:mr-20 mt-24 flex justify-center items-center flex-col">
-      <h2 className="text-[50px] text-black mb-20 text-center">Skills</h2>
+      <h2
+        className="text-[50px] text-black dark:text-white mb-20 text-center"
+        data-aos="fade-down"
+        data-aos-duration="1200"
+      >
+        Skills
+      </h2>
 
       <div className="flex flex-wrap gap-14 justify-center">
         <Skill skill={"C++"} percentage={95} />
