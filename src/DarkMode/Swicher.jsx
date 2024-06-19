@@ -15,7 +15,12 @@ export default function Switcher() {
 
   return (
     <>
-      <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={30} />
+      <DarkModeSwitch
+        checked={darkSide}
+        onChange={toggleDarkMode}
+        size={30}
+        className="h-8 w-8 fixed z-50 right-6 top-6"
+      />
     </>
   );
 }

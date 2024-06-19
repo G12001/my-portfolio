@@ -11,7 +11,7 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={handleScrollToTop}
-      className=" rounded-full bg-[#4d4d4d] h-12 w-12 fixed bottom-4 right-4 flex justify-center items-center"
+      className="max-w-full rounded-full bg-[#4d4d4d] h-12 w-12 fixed bottom-4 right-4 flex justify-center items-center"
     >
       <FaArrowUp className="text-white h-6 w-6" />
     </button>
