@@ -16,7 +16,7 @@ const ProjectCard = ({ name, imgUrl, desc, gitUrl, liveUrl }) => {
         <h1 className="text-white uppercase text-[38px]">{name}</h1>
         <p className="text-white text-[14px]">{desc}</p>
       </div>
-      <div className="button-wrapper">
+      <div className="button-wrapper h-20 w-full flex justify-center items-center bg-transparent">
         <Link to={gitUrl} target="_blank">
           <button className="border-none px-[24px] py-[12px] rounded-[24px] text-[16px] cursor-pointer outline dark:text-gray-900">
             Github

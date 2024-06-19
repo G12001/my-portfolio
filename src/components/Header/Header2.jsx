@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="relative h-screen max-w-full z-10 animated-bg">
+    <header className="relative h-screen max-w-full z-10 animated-bg overflow-hidden">
       <div className="moving-elements w-full overflow-hidden">
         <div className="element element1">
           <FaReact className="tech-icon text-blue-500" />

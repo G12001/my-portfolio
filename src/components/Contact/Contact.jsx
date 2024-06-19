@@ -43,7 +43,7 @@ const Contact = () => {
       </h2>
       <div className="w-full" data-aos="fade-up" data-aos-duration="1200">
         <div className="flex items-center gap-x-4">
-          <div className="flex-1 lg:w-1/2 h-[630px] overflow-hidden flex justify-center items-center hidden lg:block">
+          <div className="flex-1 lg:w-1/2 h-[630px] overflow-hidden lg:flex justify-center items-center hidden">
             <img
               src={contactBg1}
               className="w-full"
