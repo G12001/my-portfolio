@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import contactBg1 from "../../assets/cover_bg_1.jpg";
 import AOS from "aos";
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,7 +52,7 @@ const Contact = () => {
             />
           </div>
           <div
-            className="flex-1 flex flex-col gap-y-8 lg:mx-0 md:mx-8 lg:w-[50%] w-[100%]"
+            className="flex-1 flex flex-col gap-y-8 lg:w-[50%] w-[100%]"
             data-aos="fade-left"
             data-aos-duration="1200"
           >
