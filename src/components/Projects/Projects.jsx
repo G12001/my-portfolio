@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Jobify from "../../assets/jobify.png";
 import DevPoint from "../../assets/dev-point.png";
 import { Link } from "react-router-dom";
+import G_DIET from "../../assets/g-diet.png";
 
 const ProjectCard = ({ name, imgUrl, desc, gitUrl, liveUrl }) => {
   return (
@@ -61,11 +62,11 @@ const Projects = () => {
           liveUrl="https://devpoint.onrender.com/"
         />
         <ProjectCard
-          name="DevPoint"
-          imgUrl={DevPoint}
-          desc="A social network targeting developers. Users can create profiles and engage in discussions."
-          gitUrl="https://github.com/G12001/devpoint1.0"
-          liveUrl="https://devpoint.onrender.com/"
+          name="G-DIET"
+          imgUrl={G_DIET}
+          desc="G-Diet offers personalized diet plans tailored to individual nutritional needs, promoting a healthy lifestyle through balanced meals and convenient delivery. Join us to discover the missing piece to your fitness puzzle."
+          gitUrl="https://github.com/G12001/healthy-food"
+          liveUrl="https://healthy-food-oncp.onrender.com/"
         />
       </div>
     </section>
