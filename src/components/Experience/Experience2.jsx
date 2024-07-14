@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <section className="max-w-full lg:pl-20 lg:pr-20 px-10 sm:px-0 mt-24">
+    <section className="container mx-auto mt-24">
       <h2 className="text-[50px] text-black dark:text-white pb-20 text-center">
         Experience
       </h2>

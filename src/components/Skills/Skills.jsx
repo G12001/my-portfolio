@@ -38,7 +38,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="max-w-full lg:ml-20 lg:mr-20 mt-24 flex justify-center items-center flex-col">
+    <section className=" con mx-auto mt-24 flex justify-center items-center flex-col">
       <h2
         className="text-[50px] text-black dark:text-white mb-20 text-center"
         data-aos="fade-down"

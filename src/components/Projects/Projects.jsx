@@ -40,11 +40,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="max-w-full md:mx-20 mx-0 mt-24">
+    <section className=" container mx-auto mt-24">
       <h2 className="text-[50px] text-black dark:text-white mb-20 text-center">
         Projects
       </h2>
-      <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
+      <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
         <ProjectCard
           name="Jobify"
           imgUrl={Jobify}
@@ -53,6 +53,13 @@ const Projects = () => {
           liveUrl="https://jobify-mu72.onrender.com/"
         />
 
+        <ProjectCard
+          name="DevPoint"
+          imgUrl={DevPoint}
+          desc="A social network targeting developers. Users can create profiles and engage in discussions."
+          gitUrl="https://github.com/G12001/devpoint1.0"
+          liveUrl="https://devpoint.onrender.com/"
+        />
         <ProjectCard
           name="DevPoint"
           imgUrl={DevPoint}

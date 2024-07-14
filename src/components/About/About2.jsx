@@ -15,7 +15,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="max-w-full lg:ml-20 lg:mr-20 flex justify-center items-center flex-col">
+    <section className="container mx-auto flex justify-center items-center flex-col">
       <h2
         className="text-[50px] text-black dark:text-white my-10 text-center animated-text"
         data-aos="fade-down"
@@ -24,10 +24,7 @@ const About = () => {
       </h2>
       <div className="flex lg:flex-row flex-col">
         <div className="lg:w-[30%] lg:mt-16">
-          <ul
-            className="flex flex-col gap-y-6 lg:ml-5 ml-10 lg:mb-0 mb-8"
-            data-aos="fade-right"
-          >
+          <ul className="flex flex-col gap-y-6 mb-8" data-aos="fade-right">
             <li className="flex justify-start items-start gap-x-2">
               <span className="text-black dark:text-white font-bold">
                 Full Name:
@@ -59,7 +56,7 @@ const About = () => {
           </ul>
         </div>
         <div
-          className="lg:w-[70%] flex flex-col justify-start items-start mx-10"
+          className="lg:w-[70%] flex flex-col justify-start items-start"
           data-aos="fade-left"
         >
           <div className="mb-10">

@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="max-w-full lg:ml-20 lg:mr-20 mt-24">
+    <section className="container mx-auto mt-24">
       <h2
         className="text-[50px] text-black mb-20 text-center dark:text-white"
         data-aos="fade-down"
